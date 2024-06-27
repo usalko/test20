@@ -17,11 +17,13 @@ from src import example001
 class TestExample001(unittest.TestCase):
 
     def test_example001(self):
-        self.assertEqual(example001(), '''Twinkle, twinkle, little star,
-	How I wonder what you are! 
-		Up above the world so high,   		
-		Like a diamond in the sky. 
-Twinkle, twinkle, little star, 
+        self.assertEqual(
+            example001('Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are'),
+            '''Twinkle, twinkle, little star,
+	How I wonder what you are!
+		Up above the world so high,
+			Like a diamond in the sky.
+Twinkle, twinkle, little star,
 	How I wonder what you are''')
 
 if __name__ == '__main__':
